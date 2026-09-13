@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sotto — Privacy Policy</title>
+<style>
+  :root {
+    color-scheme: light dark;
+    --bg: #ffffff;
+    --fg: #1a1a1a;
+    --muted: #5a5a5a;
+    --accent: #e8734f;
+    --rule: #e5e2de;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #15130f;
+      --fg: #f2efe9;
+      --muted: #b9b3aa;
+      --rule: #322e28;
+    }
+  }
+  body {
+    background: var(--bg);
+    color: var(--fg);
+    font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Helvetica Neue", Arial, sans-serif;
+    max-width: 680px;
+    margin: 0 auto;
+    padding: 3rem 1.5rem 6rem;
+    line-height: 1.6;
+  }
+  h1 { font-size: 1.8rem; margin-bottom: 0.25rem; }
+  .updated { color: var(--muted); font-size: 0.9rem; margin-bottom: 2.5rem; }
+  h2 { font-size: 1.15rem; margin-top: 2.5rem; border-top: 1px solid var(--rule); padding-top: 1.5rem; }
+  a { color: var(--accent); }
+  ul { padding-left: 1.3rem; }
+  li { margin-bottom: 0.4rem; }
+  code { background: rgba(128,128,128,0.15); padding: 0.1em 0.35em; border-radius: 4px; font-size: 0.92em; }
+  .lead { color: var(--muted); }
+</style>
+</head>
+<body>
+
+<h1>Sotto — Privacy Policy</h1>
+<p class="updated">Last updated September 13, 2026</p>
+
+<p class="lead">Sotto is a push-to-talk dictation app for Mac. This page explains what happens to your data when you use it.</p>
+
+<h2>Summary</h2>
+<ul>
+  <li>Sotto has no account, no sign-up, and no server of its own.</li>
+  <li>Your speech is transcribed on your Mac.</li>
+  <li>No analytics, no crash reporting, no tracking of any kind.</li>
+  <li>Your dictation history and dictionary stay in local storage on your Mac.</li>
+  <li>Nothing is sold, shared, or shown to anyone else.</li>
+</ul>
+
+<h2>What Sotto processes</h2>
+<p>When you hold the dictation shortcut and speak, Sotto captures audio from your microphone for as long as you hold the key, and transcribes it using one of two engines you choose in Settings:</p>
+<ul>
+  <li><strong>Apple's built-in speech recognition</strong> — Apple's own on-device speech APIs. This is the default engine and requires no download.</li>
+  <li><strong>Parakeet (optional)</strong> — an on-device speech recognition model that, once downloaded, runs entirely offline on your Mac's Neural Engine. Your audio never leaves your Mac when using this engine.</li>
+</ul>
+<p>Sotto itself never uploads audio, transcripts, or any recording to a Sotto server, because no such server exists.</p>
+
+<h2>What's stored, and where</h2>
+<ul>
+  <li><strong>Dictation history</strong> — the text of what you've dictated, kept locally so you can search and reuse it. Stored only on your Mac; never uploaded anywhere.</li>
+  <li><strong>Dictionary</strong> — custom words and corrections you teach Sotto. Stored only on your Mac.</li>
+  <li><strong>Settings</strong> — your preferences (shortcut, engine choice, appearance). Stored only on your Mac via standard macOS preferences.</li>
+</ul>
+<p>You can clear your history or dictionary at any time from within the app.</p>
+
+<h2>Network access</h2>
+<p>Sotto makes network requests in exactly one situation: if you choose to download the optional Parakeet model from Settings, Sotto fetches that model file (about 470 MB, one time) over an encrypted (HTTPS) connection. If you never download Parakeet, Sotto makes no network requests at all. Apple's own speech recognition service may separately use Apple's infrastructure as part of the operating system's built-in dictation feature — that is governed by Apple's own privacy policy, not Sotto's.</p>
+
+<h2>What Sotto does not do</h2>
+<ul>
+  <li>No account or sign-up, ever.</li>
+  <li>No analytics, telemetry, or crash-reporting SDKs.</li>
+  <li>No advertising, and no advertising identifiers.</li>
+  <li>No selling or sharing of any data with third parties.</li>
+  <li>No tracking across apps or websites.</li>
+</ul>
+
+<h2>Permissions</h2>
+<ul>
+  <li><strong>Microphone</strong> — requested the first time you dictate, not at launch. Used only to capture audio while you hold the dictation shortcut.</li>
+  <li><strong>Speech Recognition</strong> — used to turn your speech into text on your Mac.</li>
+  <li><strong>Accessibility</strong> (optional) — lets Sotto insert transcribed text directly at your cursor. Without it, Sotto copies the text to your clipboard instead, so you can paste it yourself.</li>
+</ul>
+<p>You can review or revoke any of these at any time in System Settings.</p>
+
+<h2>Children's privacy</h2>
+<p>Sotto is not directed at children and does not knowingly collect information from children.</p>
+
+<h2>Changes to this policy</h2>
+<p>If this policy changes, the "Last updated" date at the top of this page will change accordingly.</p>
+
+<h2>Contact</h2>
+<p>For questions about this policy or how Sotto handles data, open an issue at <a href="https://github.com/MinTALI/sotto-privacy/issues">github.com/MinTALI/sotto-privacy/issues</a>.</p>
+
+</body>
+</html>
