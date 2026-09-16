@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Sotto — Privacy Policy</title>
+<title>Sotto — Support &amp; Privacy Policy</title>
 <style>
   :root {
     color-scheme: light dark;
@@ -33,6 +33,7 @@
   h1 { font-size: 1.8rem; margin-bottom: 0.25rem; }
   .updated { color: var(--muted); font-size: 0.9rem; margin-bottom: 2.5rem; }
   h2 { font-size: 1.15rem; margin-top: 2.5rem; border-top: 1px solid var(--rule); padding-top: 1.5rem; }
+  h3 { font-size: 1rem; margin-top: 1.75rem; }
   a { color: var(--accent); }
   ul { padding-left: 1.3rem; }
   li { margin-bottom: 0.4rem; }
@@ -42,12 +43,24 @@
 </head>
 <body>
 
-<h1>Sotto — Privacy Policy</h1>
-<p class="updated">Last updated September 13, 2026</p>
+<h1>Sotto — Support &amp; Privacy Policy</h1>
+<p class="updated">Last updated September 16, 2026</p>
 
-<p class="lead">Sotto is a push-to-talk dictation app for Mac. This page explains what happens to your data when you use it.</p>
+<p class="lead">Sotto is a push-to-talk dictation app for Mac. This page covers how to get help with the app, and what happens to your data when you use it.</p>
 
-<h2>Summary</h2>
+<h2 id="support">Support</h2>
+<p>Have a question, hit a problem, or want to request a feature? Open an issue at <a href="https://github.com/MinTALI/sotto-privacy/issues">github.com/MinTALI/sotto-privacy/issues</a> — describe what happened and what Mac/macOS version you're on, and it'll get a reply there.</p>
+
+<p><strong>Common questions:</strong></p>
+<ul>
+  <li><strong>Dictation shortcut isn't inserting text.</strong> Sotto needs Microphone access to hear you; grant it in <code>System Settings → Privacy &amp; Security → Microphone</code> if you haven't already. Accessibility access is optional — without it, Sotto copies the transcribed text to your clipboard instead, so press <code>⌘V</code> to paste it.</li>
+  <li><strong>Parakeet download is stuck, or I want to remove it.</strong> Open Sotto's Settings — the Parakeet section there lets you retry, cancel, or delete the downloaded model (about 470 MB) at any time.</li>
+  <li><strong>How do I clear my dictation history or dictionary?</strong> Both can be cleared from within the app — see History and Dictionary in the sidebar.</li>
+  <li><strong>How do I uninstall Sotto?</strong> Quit the app and drag it from Applications to the Trash, like any Mac app. Nothing else needs cleaning up — see the Privacy Policy below for exactly what Sotto stores.</li>
+</ul>
+
+<h2>Privacy Policy</h2>
+<h3>Summary</h3>
 <ul>
   <li>Sotto has no account, no sign-up, and no server of its own.</li>
   <li>Your speech is transcribed on your Mac.</li>
@@ -56,7 +69,7 @@
   <li>Nothing is sold, shared, or shown to anyone else.</li>
 </ul>
 
-<h2>What Sotto processes</h2>
+<h3>What Sotto processes</h3>
 <p>When you hold the dictation shortcut and speak, Sotto captures audio from your microphone for as long as you hold the key, and transcribes it using one of two engines you choose in Settings:</p>
 <ul>
   <li><strong>Apple's built-in speech recognition</strong> — Apple's own on-device speech APIs. This is the default engine and requires no download.</li>
@@ -64,7 +77,7 @@
 </ul>
 <p>Sotto itself never uploads audio, transcripts, or any recording to a Sotto server, because no such server exists.</p>
 
-<h2>What's stored, and where</h2>
+<h3>What's stored, and where</h3>
 <ul>
   <li><strong>Dictation history</strong> — the text of what you've dictated, kept locally so you can search and reuse it. Stored only on your Mac; never uploaded anywhere.</li>
   <li><strong>Dictionary</strong> — custom words and corrections you teach Sotto. Stored only on your Mac.</li>
@@ -72,10 +85,10 @@
 </ul>
 <p>You can clear your history or dictionary at any time from within the app.</p>
 
-<h2>Network access</h2>
+<h3>Network access</h3>
 <p>Sotto makes network requests in exactly one situation: if you choose to download the optional Parakeet model from Settings, Sotto fetches that model file (about 470 MB, one time) over an encrypted (HTTPS) connection. If you never download Parakeet, Sotto makes no network requests at all. Apple's own speech recognition service may separately use Apple's infrastructure as part of the operating system's built-in dictation feature — that is governed by Apple's own privacy policy, not Sotto's.</p>
 
-<h2>What Sotto does not do</h2>
+<h3>What Sotto does not do</h3>
 <ul>
   <li>No account or sign-up, ever.</li>
   <li>No analytics, telemetry, or crash-reporting SDKs.</li>
@@ -84,7 +97,7 @@
   <li>No tracking across apps or websites.</li>
 </ul>
 
-<h2>Permissions</h2>
+<h3>Permissions</h3>
 <ul>
   <li><strong>Microphone</strong> — requested the first time you dictate, not at launch. Used only to capture audio while you hold the dictation shortcut.</li>
   <li><strong>Speech Recognition</strong> — used to turn your speech into text on your Mac.</li>
@@ -92,13 +105,13 @@
 </ul>
 <p>You can review or revoke any of these at any time in System Settings.</p>
 
-<h2>Children's privacy</h2>
+<h3>Children's privacy</h3>
 <p>Sotto is not directed at children and does not knowingly collect information from children.</p>
 
-<h2>Changes to this policy</h2>
+<h3>Changes to this policy</h3>
 <p>If this policy changes, the "Last updated" date at the top of this page will change accordingly.</p>
 
-<h2>Contact</h2>
+<h3>Contact</h3>
 <p>For questions about this policy or how Sotto handles data, open an issue at <a href="https://github.com/MinTALI/sotto-privacy/issues">github.com/MinTALI/sotto-privacy/issues</a>.</p>
 
 </body>
